@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="LifeChoice.Controls.MenuMultiplesOptionsContol"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LifeChoice.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <Grid Background="#FF003C05">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"></RowDefinition>
+            <RowDefinition Height="80*"></RowDefinition>
+            <RowDefinition Height="20*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="80*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.Children>
+            <DockPanel  Grid.Row="1" 
+                       Grid.Column="1">
+                <Menu FontSize="36" 
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Left">
+                    <Menu.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel />
+                        </ItemsPanelTemplate>
+                    </Menu.ItemsPanel>
+                    <MenuItem Header="Fenêtre" Width="250"/>
+                    <MenuItem Header="Vidéo" Width="250"/>
+                    <MenuItem Header="Audio" Width="250"/>
+                    <MenuItem Header="Commandes" Width="250"/>
+                </Menu>
+                <TextBox AcceptsReturn="True"/>
+            </DockPanel>
+        </Grid.Children>
+    </Grid>
+</UserControl>
